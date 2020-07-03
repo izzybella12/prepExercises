@@ -39,3 +39,9 @@ console.log(palindromeVerifier("Hello my name is bella."))
 
 // .join("") 
 // joins only the content of the indexes into a string 
+
+// .slice(x, y) 
+// copies an array starting from index x and excluding index x
+const familyMembers = ["Bella", "Sam", "Caryn", "Phil"]
+console.log(familyMembers.splice(1, 2))
+// returns only ["Sam", "Caryn"]
