@@ -19,5 +19,14 @@ function palindromeVerifierGlobal(string) {
   return false;
 }
 
+// SIMPLIFIED VERSION OF ABOVE 
+
+function palindromeChecker(string) {
+  let newString = string.replace(/ /g, "")
+  return string === newString.split("").reverse().join("")
+}
+
 console.log(palindromeVerifierGlobal("Hello my name is bella"))
 console.log(palindromeVerifierGlobal("amoreroma"))
+
+console.log(palindromeChecker("amoreroma"))
