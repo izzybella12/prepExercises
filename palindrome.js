@@ -1,21 +1,23 @@
 // One instance 
 
-function palindromeVerifier(string) {
+function palindromeVerifierInstance(string) {
   let newString = string.replace(" ", "")
   return newString
 }
 
 // Global instance 
 
-function palindromeVerifier(string) {
+function palindromeVerifierGlobal(string) {
   let newString = string.replace(/ /g, "")
-  let reversedString = newString.reverse()
-  return reversedString
-  if (reversedString === newString) {
+  let stringSplit = newString.split("")
+  let stringSplitReverse = stringSplit.reverse()
+  let stringReverseJoin = stringSplitReverse.join("")
+
+  if (string === stringReverseJoin) {
     return true
   }
   return false;
 }
 
-console.log(palindromeVerifier("Hello my name is bella."))
-console.log(palindromeVerifier("amoreroma."))
+console.log(palindromeVerifierGlobal("Hello my name is bella"))
+console.log(palindromeVerifierGlobal("amoreroma"))
