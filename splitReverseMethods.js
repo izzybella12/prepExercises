@@ -4,4 +4,4 @@ let arr3 = "jones".split("");
 arr2.push(arr3);
 console.log("Array 1", arr1)
 console.log("Array 2", arr2)
-console.log("Array 3", arr3)
+console.log("Array 3", arr3) 
