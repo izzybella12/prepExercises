@@ -45,3 +45,24 @@ console.log(palindromeVerifier("Hello my name is bella."))
 const familyMembers = ["Bella", "Sam", "Caryn", "Phil"]
 console.log(familyMembers.splice(1, 2))
 // returns only ["Sam", "Caryn"]
+
+// .filter() 
+// filters out an array based on desired criteria specified in anon function
+const names = ["Bella", "Sam"]
+const result = names.filter(word => word.length >= 5)
+console.log(result)
+
+// .forEach() 
+// "Iterates over a list and applies some operation with side effects to each list member"
+names.forEach(name => console.log(name))
+console.log(names)
+
+// .map() 
+// "Iterates over a list, transforms each member of that list, and returns another list of the same size with the transformed members "
+names.map(name => console.log(name + " is my name."))
+
+// .indexOf() 
+
+// .splice() 
+
+// .keys() 
