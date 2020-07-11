@@ -64,5 +64,11 @@ names.map(name => console.log(name + " is my name."))
 // .indexOf() 
 
 // .splice() 
+// Inserts at index 1 and replaces 0 
+names.splice(1, 0, "Richard");
+console.log(names)
+// Inserts at index 1 and replaces 1
+names.splice(1, 1, "Salmon")
+console.log(names)
 
 // .keys() 
