@@ -72,3 +72,10 @@ names.splice(1, 1, "Salmon")
 console.log(names)
 
 // .keys() 
+// Identifies the keys in an object 
+const words = {
+  "house": "noun", 
+  "pretty": "adjective", 
+  "me": "pronoun"
+}
+console.log(Object.keys(words));
