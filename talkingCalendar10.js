@@ -2,23 +2,27 @@
 
 const talkingCalendar = function(date) {
 
-  Months = {
-    1: "January", 
-    2: "Febryary", 
-    3: "March", 
-    4: "April", 
-    5: "May", 
-    6: "June", 
-    7: "July", 
-    8: "August", 
-    9: "September", 
+  let months = {
+    01: "January", 
+    02: "Febryary", 
+    03: "March", 
+    04: "April", 
+    05: "May", 
+    06: "June", 
+    07: "July", 
+    08: "August", 
+    09: "September", 
     10: "October", 
     11: "November", 
     12: "December"
   };
 
-  month = 0; 
+  let writtenDate = "";
+  let month; 
   let splitDate = date.split("");
+  month = splitDate[5] += splitDate[6]
+  writtenDate += months[Number(month)]
+  console.log(writtenDate);
 
 };
 
