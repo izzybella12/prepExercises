@@ -4,10 +4,10 @@ const repeatNumbers = function(data) {
 
   let number = "";
 
-  data.forEach((array) => {
+  data.forEach((array, index) => {
     for (let i = 0; i < array[1]; i++) {
       number += array[0]
-      if ((data[i] !== data[array.length]) && (i === array[1] - 1)) {
+      if ((index !== data.length-1) && (i === array[1] - 1)) {
         number += ", "
       }
     }
